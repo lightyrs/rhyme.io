@@ -15,6 +15,7 @@ gem 'oj'
 gem 'oj_mimic_json'
 gem 'sidekiq'
 gem 'aylien_text_api'
+gem 'alchemy-api-rb', require: 'alchemy_api'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'

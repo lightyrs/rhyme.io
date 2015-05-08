@@ -38,4 +38,12 @@ class AylienClient
   def hashtags_from_text(text)
     @client.hashtags(text, text: text)
   end
+
+  def summarize_url(url)
+    @client.summarize(url, url: url)
+  end
+
+  def summarize_text(text)
+    @client.summarize(text, text: text)
+  end
 end
