@@ -22,4 +22,20 @@ class AylienClient
   def concepts_from_text(text)
     @client.concepts(text, text: text)
   end
+
+  def classify_url(url)
+    @client.classify(url, url: url)
+  end
+
+  def classify_text(text)
+    @client.classify(text, text: text)
+  end
+
+  def hashtags_from_url(url)
+    @client.hashtags(url, url: url)
+  end
+
+  def hashtags_from_text(text)
+    @client.hashtags(text, text: text)
+  end
 end
